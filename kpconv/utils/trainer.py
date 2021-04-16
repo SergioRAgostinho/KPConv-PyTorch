@@ -34,14 +34,14 @@ import time
 import sys
 
 # PLY reader
-from utils.ply import read_ply, write_ply
+from .ply import read_ply, write_ply
 
 # Metrics
-from utils.metrics import IoU_from_confusions, fast_confusion
-from utils.config import Config
+from .metrics import IoU_from_confusions, fast_confusion
+from .config import Config
 from sklearn.neighbors import KDTree
 
-from models.blocks import KPConv
+from ..models.blocks import KPConv
 
 
 # ----------------------------------------------------------------------------------------------------------------------

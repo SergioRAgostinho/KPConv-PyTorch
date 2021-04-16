@@ -33,10 +33,10 @@ import time
 import sys
 
 # PLY reader
-from utils.ply import write_ply, read_ply
+from .ply import write_ply, read_ply
 
 # Configuration class
-from utils.config import Config
+from .config import Config
 
 
 def show_ModelNet_models(all_points):

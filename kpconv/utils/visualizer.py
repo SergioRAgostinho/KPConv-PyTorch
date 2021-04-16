@@ -32,13 +32,13 @@ import time
 from mayavi import mlab
 import sys
 
-from models.blocks import KPConv
+from ..models.blocks import KPConv
 
 # PLY reader
-from utils.ply import write_ply, read_ply
+from .ply import write_ply, read_ply
 
 # Configuration class
-from utils.config import Config, bcolors
+from .config import Config, bcolors
 
 
 # ----------------------------------------------------------------------------------------------------------------------

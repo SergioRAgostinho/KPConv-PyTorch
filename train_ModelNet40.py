@@ -32,9 +32,9 @@ import torch
 from datasets.ModelNet40 import *
 from torch.utils.data import DataLoader
 
-from utils.config import Config
-from utils.trainer import ModelTrainer
-from models.architectures import KPCNN
+from kpconv.utils.config import Config
+from kpconv.utils.trainer import ModelTrainer
+from kpconv.models.architectures import KPCNN
 
 
 # ----------------------------------------------------------------------------------------------------------------------

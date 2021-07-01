@@ -37,10 +37,10 @@ from os.path import exists, join
 # Dataset parent class
 from datasets.common import PointCloudDataset
 from torch.utils.data import Sampler, get_worker_info
-from utils.mayavi_visu import *
+from kpconv.utils.mayavi_visu import *
 
 from datasets.common import grid_subsampling
-from utils.config import bcolors
+from kpconv.utils.config import bcolors
 
 # ----------------------------------------------------------------------------------------------------------------------
 #
@@ -110,7 +110,8 @@ class ModelNet40Dataset(PointCloudDataset):
         self.ignored_labels = np.array([])
 
         # Dataset folder
-        self.path = '../../Data/ModelNet40'
+        # self.path = '../../Data/ModelNet40'
+        self.path = '/storage/user/agostinh/kpconv/modelnet40_normal_resampled'
 
         # Type of task conducted on this dataset
         self.dataset_task = 'classification'

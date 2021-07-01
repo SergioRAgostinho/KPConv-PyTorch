@@ -29,9 +29,9 @@ import os
 from datasets.S3DIS import *
 from torch.utils.data import DataLoader
 
-from utils.config import Config
-from utils.trainer import ModelTrainer
-from models.architectures import KPFCNN
+from kpconv.utils.config import Config
+from kpconv.utils.trainer import ModelTrainer
+from kpconv.models.architectures import KPFCNN
 
 
 # ----------------------------------------------------------------------------------------------------------------------

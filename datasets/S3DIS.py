@@ -38,10 +38,10 @@ from os.path import exists, join, isdir
 # Dataset parent class
 from datasets.common import PointCloudDataset
 from torch.utils.data import Sampler, get_worker_info
-from utils.mayavi_visu import *
+from kpconv.utils.mayavi_visu import *
 
 from datasets.common import grid_subsampling
-from utils.config import bcolors
+from kpconv.utils.config import bcolors
 
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -85,7 +85,8 @@ class S3DISDataset(PointCloudDataset):
         self.ignored_labels = np.array([])
 
         # Dataset folder
-        self.path = '../../Data/S3DIS'
+        # self.path = '../../Data/S3DIS'
+        self.path = "/storage/user/agostinh/kpconv/Stanford3dDataset_v1.2"
 
         # Type of task conducted on this dataset
         self.dataset_task = 'cloud_segmentation'
